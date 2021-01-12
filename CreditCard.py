@@ -5,7 +5,7 @@ Then shows whether it is valid for American Express, MasterCard, Visa, or Discov
 
 def creditCard():
     credit_card_number = input("What is your credit card number? ")
-
+    
     #retrieving the first digit or zeroth index of the credit card number
     first_digit_card = credit_card_number[0]
 
