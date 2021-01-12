@@ -1,3 +1,3 @@
 print("Hello Data")
-print("Goodbye")
-print("Forever")
+x = input("Give me your name ")
+print("Goodbye " + x)
