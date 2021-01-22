@@ -1,0 +1,3 @@
+apple,orange,grape,berry,fruit
+python,java,php,ram,computer,keyboard
+deoxyribose,sulfhydryl,phenylalanine,zwitterion,avogadro
