@@ -62,6 +62,7 @@ def game():
             
             #compares the randomWord with the correct guessed values using sets which are 
             if sorted(''.join(set(randomWord))) == sorted(''.join(set(guess))): 
+                #if the user guesses the word, we need to set won to true
                 won = True
             else: 
                 turns -= 1
