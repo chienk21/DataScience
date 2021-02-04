@@ -22,7 +22,7 @@ def game():
     # create a list of words
     # pick a random word
     # the user to guess
-    print(name,end=', ')
+    print(name,end = ', ')
     game = input("do you want to play? ")
 
     while game == 'yes':
@@ -67,6 +67,10 @@ def game():
             else: 
                 turns -= 1
                 print("you have ", str(turns), " turn(s) left")
+            
+            if turns == 0:
+                print("You lost!")
+                print("The word was: " + randomWord)
 
         game = input(name + " do you want to play again? (yes or no)")
 
