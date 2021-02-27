@@ -4,7 +4,7 @@ fp = 'WeatherAnalysis//WeatherDataSet.txt'
 data = np.genfromtxt(fp, skip_header=1, usecols=(0, 1, 2, 3))
 print(data)
 date = data[:,0]
-print(data)
+print(date)
 temp_avg = data[:,1]
 temp_max = data[:,2]
 temp_min = data[:,3]
@@ -33,6 +33,7 @@ print("Number of missing tmax values:", np.count_nonzero(missing_tmax_mask))
 #Make a mask array, then remove bad values using the mask.
 tmax_mask = np.isfinite(temp_max)
 tmax_clean = temp_max[tmax_mask]
+print(tmax_clean)
 
 #We can also remove the corresponding dates by using the same mask (tmax_mask) on our date array.
 date_clean = date[tmax_mask]
